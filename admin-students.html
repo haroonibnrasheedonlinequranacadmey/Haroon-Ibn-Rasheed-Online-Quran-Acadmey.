@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Student Management | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body onload="initRolePage('admin')">
+<header class="topbar">
+  <div class="brand">Haroon Ibn Rasheed Online Quran Academy</div>
+  <nav class="navlinks">
+    <a href="admin-dashboard.html">Home</a>
+<a href="admin-teachers.html">Teachers</a>
+<a href="admin-students.html">Students</a>
+<a href="admin-courses.html">Courses</a>
+<a href="admin-schedule.html">Schedule</a>
+<a href="admin-leaves.html">Leave Applications</a>
+<a href="admin-salaries.html">Salary Details</a>
+    <a href="#" onclick="logout();return false;">Logout</a>
+  </nav>
+</header>
+<div class="page-title">Admin — Student Management</div>
+<main class="container">
+
+<div class="toolbar"><h2 class="panel-title">Student Accounts</h2><a class="btn teal" href="#add">+ Add Student</a></div>
+<div class="card" id="add" style="margin-bottom:15px">
+<h3 class="panel-title">Create Student Login</h3>
+<div class="form-grid">
+<div class="field"><label>Student Name</label><input placeholder="Student full name"></div>
+<div class="field"><label>Email</label><input type="email" placeholder="student@example.com"></div>
+<div class="field"><label>Password</label><input type="password" placeholder="Temporary password"></div>
+<div class="field"><label>Teacher</label><select><option>Demo Teacher</option><option>Ahmad Raheel</option></select></div>
+<div class="field"><label>Course</label><select><option>Quran Reading</option><option>Hifz</option><option>Tajweed</option></select></div>
+<div class="field"><label>Schedule</label><input placeholder="e.g. Mon/Wed/Fri 09:00 PM"></div>
+</div><div class="actions"><button class="btn teal" onclick="alert('Demo only — connect this form to your backend database.')">Create Student</button></div>
+</div>
+<div class="table-wrap card"><table><thead><tr><th>Student</th><th>Email</th><th>Teacher</th><th>Course</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Demo Student</td><td>student@haroonquranacademy.com</td><td>Demo Teacher</td><td>Quran Reading</td><td><span class="status">Active</span></td><td><button class="btn blue">Edit</button><button class="btn red">Disable</button></td></tr>
+<tr><td>Haddy Jallow</td><td>haddy@example.com</td><td>Demo Teacher</td><td>Quran Reading</td><td><span class="status">Active</span></td><td><button class="btn blue">Edit</button></td></tr>
+</tbody></table></div>
+
+</main>
+<div class="footer">© <span data-year></span> Haroon Ibn Rasheed Online Quran Academy</div>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+
+<footer class="site-footer">
+  <div><strong>Haroon Ibn Rasheed Online Quran Academy</strong></div>
+  <div class="footer-contact">
+    <span>WhatsApp: <a href="https://wa.me/923478140162" target="_blank">+92 347 8140162</a></span>
+    <span><a href="https://wa.me/923189842581" target="_blank">+92 318 9842581</a></span>
+    <span>Email: <a href="mailto:easyquranlearning10@gmail.com">easyquranlearning10@gmail.com</a></span>
+  </div>
+</footer>
+</body></html>

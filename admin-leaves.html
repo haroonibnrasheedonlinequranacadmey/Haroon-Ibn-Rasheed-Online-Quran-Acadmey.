@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Leave Applications | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body onload="initRolePage('admin')">
+<header class="topbar">
+  <div class="brand">Haroon Ibn Rasheed Online Quran Academy</div>
+  <nav class="navlinks">
+    <a href="admin-dashboard.html">Home</a>
+<a href="admin-teachers.html">Teachers</a>
+<a href="admin-students.html">Students</a>
+<a href="admin-courses.html">Courses</a>
+<a href="admin-schedule.html">Schedule</a>
+<a href="admin-leaves.html">Leave Applications</a>
+<a href="admin-salaries.html">Salary Details</a>
+    <a href="#" onclick="logout();return false;">Logout</a>
+  </nav>
+</header>
+<div class="page-title">Admin — Leave Applications</div>
+<main class="container">
+
+<div class="table-wrap card"><table><thead><tr><th>Teacher</th><th>Date</th><th>Reason</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Demo Teacher</td><td>2026-09-24</td><td>Personal</td><td><span class="status">Pending</span></td><td><button class="btn teal">Approve</button><button class="btn red">Reject</button></td></tr>
+<tr><td>Ahmad Raheel</td><td>2026-09-27</td><td>Family event</td><td><span class="status">Pending</span></td><td><button class="btn teal">Approve</button><button class="btn red">Reject</button></td></tr>
+</tbody></table></div>
+
+</main>
+<div class="footer">© <span data-year></span> Haroon Ibn Rasheed Online Quran Academy</div>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+
+<footer class="site-footer">
+  <div><strong>Haroon Ibn Rasheed Online Quran Academy</strong></div>
+  <div class="footer-contact">
+    <span>WhatsApp: <a href="https://wa.me/923478140162" target="_blank">+92 347 8140162</a></span>
+    <span><a href="https://wa.me/923189842581" target="_blank">+92 318 9842581</a></span>
+    <span>Email: <a href="mailto:easyquranlearning10@gmail.com">easyquranlearning10@gmail.com</a></span>
+  </div>
+</footer>
+</body></html>

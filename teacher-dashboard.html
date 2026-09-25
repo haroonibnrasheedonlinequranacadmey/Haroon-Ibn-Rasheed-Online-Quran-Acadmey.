@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Dashboard | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body onload="initRolePage('teacher')">
+<header class="topbar">
+  <div class="brand">Haroon Ibn Rasheed Online Quran Academy</div>
+  <nav class="navlinks">
+    <a href="teacher-dashboard.html">Home</a>
+<a href="teacher-schedule.html">Regular Schedule</a>
+<a href="teacher-students.html">List of Students</a>
+<a href="teacher-courses.html">Course Material</a>
+<a href="teacher-leaves.html">Leave Applications</a>
+<a href="teacher-salary.html">Salary Details</a>
+<a href="teacher-group.html">Group Class</a>
+    <a href="#" onclick="logout();return false;">Logout</a>
+  </nav>
+</header>
+<div class="page-title">Teacher Dashboard</div>
+<main class="container">
+
+<div class="grid stats">
+  <div class="stat">Total Classes: <strong>116</strong></div>
+  <div class="stat">Class Rate: <strong>140</strong></div>
+  <div class="stat">Total Salary: <strong>16240</strong></div>
+  <div class="stat">Late Classes: <strong>4</strong></div>
+  <div class="stat">Reminders: <strong>—</strong></div>
+  <div class="stat">Left Classes: <strong>0</strong></div>
+</div>
+<div class="toolbar" style="margin-top:14px"><input class="datebox" type="date" value="2026-09-18"></div>
+<div class="table-wrap card"><table><thead><tr><th>Teacher Time</th><th>Student Time</th><th>Student Name</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr class="row-green"><td>12:00 AM</td><td>09:00 PM</td><td>Haddy Jallow</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-green"><td>01:00 AM</td><td>04:00 PM</td><td>Moiz Malik</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-green"><td>01:30 AM</td><td>04:30 PM</td><td>Ahmmer/Raaid</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-green"><td>02:00 AM</td><td>04:00 PM</td><td>Noor Ahmad/Bro</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-green"><td>04:00 AM</td><td>06:00 PM</td><td>Baba Shaik</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-green"><td>04:30 AM</td><td>07:30 PM</td><td>Ashar malik</td><td><span class="status">Regular</span></td><td><button class="btn teal">Taken</button></td></tr>
+<tr class="row-yellow"><td>05:00 AM</td><td>05:30 AM</td><td>Fazila fathima</td><td><span class="status">Regular</span></td><td><button class="btn gray">Taken offline</button></td></tr>
+<tr class="row-purple"><td>05:30 AM</td><td>06:00 AM</td><td>fatina zaniab</td><td><span class="status">Regular</span></td><td><button class="btn blue">On Leave</button><button class="btn blue">Re-schedule</button></td></tr>
+<tr class="row-yellow"><td>09:00 PM</td><td>04:00 PM</td><td>Dawood Dar</td><td><span class="status">Regular</span></td><td><button class="btn teal">End Class</button><button class="btn gold">Restart</button><button class="btn gray">Copy Link</button><button class="btn teal">Open Lesson</button></td></tr>
+<tr><td>09:30 PM</td><td>10:00 PM</td><td>Nahela JABIL</td><td><span class="status">Regular</span></td><td><button class="btn red">Activate</button><button class="btn blue">Leave</button></td></tr>
+<tr><td>10:30 PM</td><td>05:30 PM</td><td>Musa</td><td><span class="status">Regular</span></td><td><button class="btn red">Activate</button><button class="btn blue">Leave</button></td></tr>
+</tbody></table></div>
+
+</main>
+<div class="footer">© <span data-year></span> Haroon Ibn Rasheed Online Quran Academy</div>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+
+<footer class="site-footer">
+  <div><strong>Haroon Ibn Rasheed Online Quran Academy</strong></div>
+  <div class="footer-contact">
+    <span>WhatsApp: <a href="https://wa.me/923478140162" target="_blank">+92 347 8140162</a></span>
+    <span><a href="https://wa.me/923189842581" target="_blank">+92 318 9842581</a></span>
+    <span>Email: <a href="mailto:easyquranlearning10@gmail.com">easyquranlearning10@gmail.com</a></span>
+  </div>
+</footer>
+</body></html>

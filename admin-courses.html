@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Course Management | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body onload="initRolePage('admin')">
+<header class="topbar">
+  <div class="brand">Haroon Ibn Rasheed Online Quran Academy</div>
+  <nav class="navlinks">
+    <a href="admin-dashboard.html">Home</a>
+<a href="admin-teachers.html">Teachers</a>
+<a href="admin-students.html">Students</a>
+<a href="admin-courses.html">Courses</a>
+<a href="admin-schedule.html">Schedule</a>
+<a href="admin-leaves.html">Leave Applications</a>
+<a href="admin-salaries.html">Salary Details</a>
+    <a href="#" onclick="logout();return false;">Logout</a>
+  </nav>
+</header>
+<div class="page-title">Admin — Course Management</div>
+<main class="container">
+
+<div class="card" style="margin-bottom:15px">
+<h3 class="panel-title">Add Course</h3>
+<div class="form-grid">
+<div class="field"><label>Course Name</label><input placeholder="e.g. Quran Reading"></div>
+<div class="field"><label>Description</label><input placeholder="Course description"></div>
+</div><div class="actions"><button class="btn teal" onclick="alert('Demo only — connect to database.')">Add Course</button></div>
+</div>
+<div class="table-wrap card"><table><thead><tr><th>Course</th><th>Description</th><th>Teachers</th><th>Students</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Quran Reading</td><td>Basic reading and fluency</td><td>5</td><td>31</td><td><span class="status">Active</span></td><td><button class="btn blue">Edit</button></td></tr>
+<tr><td>Tajweed</td><td>Rules of Quran recitation</td><td>3</td><td>19</td><td><span class="status">Active</span></td><td><button class="btn blue">Edit</button></td></tr>
+<tr><td>Hifz</td><td>Quran memorization</td><td>4</td><td>36</td><td><span class="status">Active</span></td><td><button class="btn blue">Edit</button></td></tr>
+</tbody></table></div>
+
+</main>
+<div class="footer">© <span data-year></span> Haroon Ibn Rasheed Online Quran Academy</div>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+
+<footer class="site-footer">
+  <div><strong>Haroon Ibn Rasheed Online Quran Academy</strong></div>
+  <div class="footer-contact">
+    <span>WhatsApp: <a href="https://wa.me/923478140162" target="_blank">+92 347 8140162</a></span>
+    <span><a href="https://wa.me/923189842581" target="_blank">+92 318 9842581</a></span>
+    <span>Email: <a href="mailto:easyquranlearning10@gmail.com">easyquranlearning10@gmail.com</a></span>
+  </div>
+</footer>
+</body></html>

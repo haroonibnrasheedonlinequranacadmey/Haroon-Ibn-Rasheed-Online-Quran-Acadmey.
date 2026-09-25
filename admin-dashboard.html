@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body onload="initRolePage('admin')">
+<header class="topbar">
+  <div class="brand">Haroon Ibn Rasheed Online Quran Academy</div>
+  <nav class="navlinks">
+    <a href="admin-dashboard.html">Home</a>
+<a href="admin-teachers.html">Teachers</a>
+<a href="admin-students.html">Students</a>
+<a href="admin-courses.html">Courses</a>
+<a href="admin-schedule.html">Schedule</a>
+<a href="admin-leaves.html">Leave Applications</a>
+<a href="admin-salaries.html">Salary Details</a>
+    <a href="#" onclick="logout();return false;">Logout</a>
+  </nav>
+</header>
+<div class="page-title">Admin Dashboard</div>
+<main class="container">
+
+<div class="notice"><b>Admin control center.</b> Teachers and students are managed here. In the production version, authentication and data should be connected to a secure backend.</div>
+<div class="grid stats">
+  <div class="stat">Total Teachers: <strong>12</strong></div>
+  <div class="stat">Total Students: <strong>86</strong></div>
+  <div class="stat">Active Courses: <strong>14</strong></div>
+  <div class="stat">Today's Classes: <strong>38</strong></div>
+  <div class="stat">Pending Leaves: <strong>4</strong></div>
+  <div class="stat">Monthly Payroll: <strong>PKR 162,400</strong></div>
+</div>
+<h2 class="panel-title" style="margin-top:22px">Quick Management</h2>
+<div class="grid dashboard-grid">
+  <a class="quick" href="admin-teachers.html"><h3>Teacher Panel</h3><p>Create, edit, deactivate teacher accounts and assign courses.</p></a>
+  <a class="quick" href="admin-students.html"><h3>Student Panel</h3><p>Create student accounts and assign teachers/courses.</p></a>
+  <a class="quick" href="admin-courses.html"><h3>Course Management</h3><p>Add courses and connect them to teacher/student panels.</p></a>
+  <a class="quick" href="admin-schedule.html"><h3>Master Schedule</h3><p>Manage the academy timetable.</p></a>
+</div>
+
+</main>
+<div class="footer">© <span data-year></span> Haroon Ibn Rasheed Online Quran Academy</div>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+
+<footer class="site-footer">
+  <div><strong>Haroon Ibn Rasheed Online Quran Academy</strong></div>
+  <div class="footer-contact">
+    <span>WhatsApp: <a href="https://wa.me/923478140162" target="_blank">+92 347 8140162</a></span>
+    <span><a href="https://wa.me/923189842581" target="_blank">+92 318 9842581</a></span>
+    <span>Email: <a href="mailto:easyquranlearning10@gmail.com">easyquranlearning10@gmail.com</a></span>
+  </div>
+</footer>
+</body></html>

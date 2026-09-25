@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f5b43">
+<title>Login | Haroon Ibn Rasheed Online Quran Academy</title>
+<link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body class="login-page">
+<main class="login-shell">
+  <section class="login-brand">
+    <div class="brand-pattern"></div>
+    <div class="hr-logo"><img src="assets/hr-logo.svg" alt="HR Academy Logo" style="width:100%;height:100%"></div>
+    <h1>Haroon Ibn Rasheed</h1>
+    <div class="brand-line"></div>
+    <div class="tagline">Online Quran Academy</div>
+  </section>
+
+  <section class="login-panel">
+    <div class="login-form-wrap">
+      <h2>Welcome Back</h2>
+      <p class="login-sub">Sign in to continue to your academy portal.</p>
+
+      <form id="loginForm" onsubmit="login(event)" novalidate>
+        <div class="role-tabs" aria-label="Account type">
+          <div class="role-tab">
+            <input id="roleTeacher" name="role" value="teacher" type="radio" checked>
+            <label for="roleTeacher">Teacher</label>
+          </div>
+          <div class="role-tab">
+            <input id="roleStudent" name="role" value="student" type="radio">
+            <label for="roleStudent">Student</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" autocomplete="username" placeholder="Enter your email" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button class="password-toggle" type="button" onclick="togglePassword('password', this)" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <button id="loginButton" class="login-btn" type="submit">Login</button>
+        <div id="loginMsg" class="login-message" role="alert" aria-live="polite"></div>
+      </form>
+
+      <div class="login-links">
+        <a href="forgot-password.html">Forgot Password?</a>
+      </div>
+
+      <p class="login-note">Use the email and password provided by the academy administrator.</p>
+      <footer class="site-footer"><strong>Haroon Ibn Rasheed Online Quran Academy</strong></footer>
+    </div>
+  </section>
+</main>
+<script src="assets/supabase-config.js?v=4"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="assets/app.js?v=4"></script>
+</body>
+</html>
